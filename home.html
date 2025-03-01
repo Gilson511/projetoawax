@@ -4,21 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1.0"/>
     <title>Awax</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript">
-        window.onload = function(){
-            document.querySelector(".menu").addEventListener("click",function(){
-                if (document.querySelector(".menu nav ul").style.display == 'none'){
-                    document.querySelector(".menu nav ul").style.display = 'flex';
-                    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="icon" type="imagem" href="assets/icons/empresa.png"/>
 
-                }else{
-                    document.querySelector(".menu nav ul").style.display = 'none';
-                }
-
-            });
-        };
-    </script>
 </head>
 <body>
     <header>
@@ -68,6 +56,7 @@
                         <h2>Call Us: +35997448246</h2>
                         <a href="#">get in touch</a>
                     </div>
+
                 </div>
                 <div class="slide">
                     <div class="slide_area">
@@ -77,11 +66,13 @@
                     </div>
                 </div>
             </div>
+
             <div class="sliders_pontos">
-                <div class="pontos active"></div>
-                <div class="pontos"></div>
-                <div class="pontos"></div>
+                <div class="pontos active" onclick="mudarSlide(0)"></div>
+                <div class="pontos" onclick="mudarSlide(1)"></div>
+                <div class="pontos" onclick="mudarSlide(2)"></div>   
             </div>
+
         </section>
 
         <section class="defaut light">
@@ -722,5 +713,6 @@
     <footer>
 
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
