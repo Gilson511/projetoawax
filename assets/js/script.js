@@ -1,13 +1,12 @@
 window.onload = function () {
-    document.querySelector(".menu").addEventListener("click", function () {
-        let menuList = document.querySelector(".menu nav");
+    const menuOpener = document.querySelector(".menu-opener");
+    const nav = document.querySelector(".menu nav");
 
-        if (window.innerWidth <= 798) {
-            let displayAtual = window.getComputedStyle(menuList).display;
-            menuList.style.display = displayAtual === "none" ? "flex" : "none";
-        }
-    });
-
+    if (menuOpener && nav) {
+        menuOpener.addEventListener("click", function () {
+            nav.classList.toggle("active");
+        });
+    }
 };
 
 let indexAtual = 0;
